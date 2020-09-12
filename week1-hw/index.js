@@ -2,10 +2,11 @@
 var randomNumber = Math.floor(Math.random() * 100) + 1;
 var pastGuess = "";
 var count = 10;
-var yourGuess = document.getElementById("input-number").value;
+
 
 function handleClick(){
     count --;
+    var yourGuess = document.getElementById("input-number").value;
 
     // check yourGuess
     if (yourGuess < randomNumber){
